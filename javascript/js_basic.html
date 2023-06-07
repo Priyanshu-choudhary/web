@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function myFunction() {
+  document.getElementById("demo").innerHTML = "Paragraph changed.";
+};
+function add(){
+document.getElementById("value").innerHTML = 5 + 6;
+};
+
+function alert(){
+alert(5 + 6)
+};
+
+function consle(){
+  console.log(8 + 6);
+};
+</script>
+<script>
+// How to create variables:
+var x;
+let y;
+
+// How to use variables:
+x = 5;
+y = 6;
+let z = x + y;
+function adding(){
+  document.getElementById("adding").innerHTML =z;
+  };
+  
+const pi = 3.14;
+let person = "John Doe";
+let answer = 'Yes I am!';
+let f=5;
+let j=5;
+function showpi(){
+  document.getElementById("a").innerHTML =pi;
+};
+function showperson(){
+  document.getElementById("b").innerHTML =person;
+};
+function showstring(){
+  document.getElementById("c").innerHTML =answer;
+};
+
+function multiplying(a,b){
+return a * b;
+};
+function multiply(){
+let c = multiplying(f, j);
+console.log(c);
+document.getElementById("addingpara").innerHTML =c;
+};
+</script>
+  
+
+</head>
+<body>
+
+<h2>avaScript basic</h2>
+<p id="demo">A Paragraph.</p>
+<button type="button" onclick="myFunction()">Try it</button>
+<hr> 
+
+<p>document.getElementById</p>
+<p>example</p>
+<p id="value">5+6=</p>
+<button type="button"onclick="add()">add</button>
+<hr> 
+
+<p>alert</p>
+<p>example</p>
+<p>syntex=alert(5 + 6)</p>
+<button type="button"onclick="alert()">alert</button>
+<hr> 
+
+<p>console.log</p>
+<p>example</p>
+<p>syntex=console.log(5 + 6)</p>
+<button type="button"onclick="consle()">consle</button>
+<hr> 
+
+<p>Click the button to print the current page.</p>
+<button onclick="window.print()">Print this page</button>
+<hr>
+
+<p>var   	  =Declares a variable</p>
+<p>let	    = Declares a block variable</p>
+<p>const	  = Declares a block constant</p>
+<p>if	      =Marks a block of statements to be executed on a condition</p>
+<p>switch	  =Marks a block of statements to be executed in different cases</p>
+<p>for	    =Marks a block of statements to be executed in a loop</p>
+<p>function	=Declares a function</p>
+<p>return	  =Exits a function</p>
+<p>try	    =Implements error handling to a block of statements</p>
+<hr>
+
+<p>variable example</p>
+<button id="adding"type="button"onclick="adding()">adding variable</button>
+<button id="a"type="button"onclick="showpi()">show var pi</button>
+<button id="b"type="button"onclick="showperson()">show person</button>
+<button id="c"type="button"onclick="showstring()">show string</button>
+<hr>
+<button id="addingpara"type="button"onclick="multiply()">result</button>
+<hr>
+
+
+
+
+<button onclick="myFunction()">square</button>
+
+<p id="demo1"></p>
+
+<script>
+function myFunction() {
+  let person1 = prompt("square", "");
+  if (person1 != null) {
+    document.getElementById("demo1").innerHTML =
+    "Square of " + person1 + " is "+person1*person1;
+  }
+}
+</script>
+
+</body>
+</html> 
