@@ -1,0 +1,35 @@
+<!jquery slector hiding>
+
+for element ==          $("p").hide();
+for id ==       	$("#test").hide();
+for class ==    	$(".test").hide();
+for all element ==  	$("*").hide();
+for herf or url ==      $("[href]").hide();
+for button ==           $(":button").hide();
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("button").click(function(){
+    $("#test").hide();
+  });
+});
+</script>
+</head>
+<body>
+
+<h2>This is a heading</h2>
+
+<p>This is a paragraph.</p>
+<p id="test">This is another paragraph.</p>
+
+<button>Click me</button>
+
+</body>
+</html>
