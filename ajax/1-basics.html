@@ -9,11 +9,14 @@
 
 <script>
 function loadDoc() {
-  //variable = new XMLHttpRequest();
-  var xhttp = new XMLHttpRequest();
+  	//variable = new XMLHttpRequest();
+  	var xhttp = new XMLHttpRequest();
  
- xhttp.onreadystatechange = function() {
+	 xhttp.onreadystatechange = function() {
         if (this.readyState == 4 && this.status == 200) {
+
+
+
 /*
         .onreadystatechange    		Defines a function to be called when the 
 					readyState property changes
@@ -31,6 +34,8 @@ function loadDoc() {
 
 	statusText			Returns the status-text (e.g. "OK" or "Not Found")
 */	
+	
+
 	document.getElementById("demo").innerHTML =
         this.responseText;
     }
